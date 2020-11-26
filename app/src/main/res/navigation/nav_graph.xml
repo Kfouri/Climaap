@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.kfouri.climaap.ui.CitiesListFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_open_weather"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.kfouri.climaap.ui.WeatherFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <argument
+            android:name="LAT"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="LON"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="NAME"
+            app:argType="string"
+            android:defaultValue="NoName" />
+    </fragment>
+</navigation>

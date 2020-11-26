@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Climaap</string>
+
+    <string name="weather_title">Weather - %1$s</string>
+    <string name="weather_temp">%1$s º C</string>
+    <string name="weather_feels_like">Feels Like: %1$s º C</string>
+    <string name="weather_humidity">Humidity: %1$s %%</string>
+    <string name="weather_wind_speed">Wind Speed: %1$s km/h %2$s</string>
+    <string name="weather_max_min">%1$s/%2$s ºC</string>
+    <string name="current_location">Current Location: %1$s</string>
+</resources>
